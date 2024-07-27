@@ -1,0 +1,126 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    color:rgb(156, 176, 216); 
+}
+body{
+    display: flex;
+    box-sizing:border-box;
+    background-color:rgb(167, 175, 171);
+}
+.contenedor{
+    position:relative;
+    height:400px; 
+    width:400px;
+    background-color:rgb(51, 61, 56);
+    border-radius: 5px; 
+    transform: translate(100px, 100px);
+    box-shadow: 0 6px 20px 0.6px rgb(0, 0, 0);
+    display:inline-block;
+}
+.Cristal{
+    position:absolute;
+    height:150px;
+    width:150px;
+    background-color: #81817f;
+    clip-path:polygon(51% 0, 61% 1%, 69% 4%, 74% 9%, 79% 13%, 83% 19%, 85% 26%, 86% 32%, 86% 38%, 86% 44%, 85% 48%, 84% 53%, 82% 59%, 79% 65%, 73% 73%, 70% 79%, 69% 85%, 69% 93%, 69% 100%, 31% 100%, 31% 91%, 29% 82%, 24% 74%, 20% 68%, 14% 57%, 11% 49%, 10% 41%, 11% 33%, 12% 25%, 16% 17%, 20% 9%, 28% 3%, 39% 1%); 
+    transform: translate(120px, 80px);
+    filter: drop-shadow(4px 4px 10px  black);
+    z-index:3;
+} 
+.cristal_dI2{
+    position:absolute;
+    height:150px;
+    width:150px;
+    background-color: #FFF35C;
+    clip-path:polygon(51% 0, 61% 1%, 69% 4%, 74% 9%, 79% 13%, 83% 19%, 85% 26%, 86% 32%, 86% 38%, 86% 44%, 85% 48%, 84% 53%, 82% 59%, 79% 65%, 73% 73%, 70% 79%, 69% 85%, 69% 93%, 69% 100%, 31% 100%, 31% 91%, 29% 82%, 24% 74%, 20% 68%, 14% 57%, 11% 49%, 10% 41%, 11% 33%, 12% 25%, 16% 17%, 20% 9%, 28% 3%, 39% 1%); 
+    transform: translate(120px, 80px);
+    filter: drop-shadow(4px 4px 10px  black);
+    z-index:9;
+}
+.res{
+     position:absolute;
+     height:115px;
+     width:115px;
+     border-radius:50%;
+     background-color:transparent;
+     transform: translate(135px, 80px);
+     
+   
+}
+.resplandor{
+    /* display:none; */
+    position:absolute;
+    height:115px;
+    width:115px;
+    border-radius:50%;
+    background-color: #FFF35C;
+    transform: translate(135px, 80px);
+    z-index:1;
+    box-shadow: 0 0 50px 20px #f8ef68 ;
+}
+.f1{
+    position:absolute;
+    height:12px;
+    width:63px;
+    background-color:rgb(211, 195, 195);
+    border-radius:7px;
+    transform:translate(163px,235px);
+}
+.f2{
+    position:absolute;
+    height:12px;
+    width:63px;
+    background-color:rgb(211, 195, 195);
+    border-radius:7px;
+    transform:translate(163px,253px);
+}
+.Contact{
+    position:absolute;
+    height:35px;
+    width:58px;
+    clip-path:polygon(0% 0%, 100% 0%, 74% 53%, 31% 53%);
+    background-color:rgb(211, 195, 195);
+    transform:translate(165px,270px);
+}
+.interruptor{
+     position:absolute;
+     transform:translate(20px, 20px);
+    height:30px;
+    width:50px;
+    background-color:transparent;
+    border-bottom:3px solid rgb(75, 73, 73);
+    border-right:3px solid rgb(75, 73, 73);
+    -webkit-appearance:none;
+    box-shadow:6px 4px 23px .2px rgb(5, 5, 5);
+    border-radius: 5px;
+}
+.interruptor_active{
+    position:absolute;
+    transform:translate(20px, 20px);
+   height:30px;
+   width:50px;
+   background-color:transparent;
+   border-bottom:3px solid rgb(0, 0, 0);
+   border-right:3px solid rgb(46, 45, 45);
+   -webkit-appearance:none;
+   border:1px solid rgba(134, 231, 255, 0.788);
+   box-shadow:6px 4px 23px .2px rgb(93, 223, 255);
+   border-radius: 5px;
+}
+.interruptor::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    width:10px;
+    height:30px;
+    background-color:transparent;
+    border-radius:6px;
+    box-shadow:0 0 10px 0.3px black;
+    cursor:pointer;
+}
+.interruptor::-webkit-slider-thumb:hover{
+    box-shadow:0 0 10px 0.3px black, 0 0 5px .8px white;
+}
+.interruptor:active::-webkit-slider-thumb{
+    border: 1px solid rgb(255, 223, 41);
+}
